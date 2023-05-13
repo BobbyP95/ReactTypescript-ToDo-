@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-// import NavBar from './components/NavBar';
+import { EntryPoint } from './components/EntryPoint';
+import { TaksList } from './components/TaksList';
 function App() {
 
   return (
     <>
-      
+      <EntryPoint/>
+      <TaksList/>
     </>
   );
 }
