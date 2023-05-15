@@ -1,0 +1,34 @@
+.tasks_list{
+    width: 70vw;
+    margin: auto;
+    /* background-color: aqua; */
+}
+.filter_btn{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    min-width: 350px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.filter_btn div{
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    height: 30px;  
+}
+
+.filter_btn button{
+    width: 80%;
+    height: 30px;
+
+}
+
+.filter_btn button:hover{
+    background-color:#0a2f60c4 ;
+}
+
+.filter_btn button:active{
+    width: 12vw;
+}
