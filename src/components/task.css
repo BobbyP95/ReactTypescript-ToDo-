@@ -1,0 +1,93 @@
+.taskDiv{
+    /* background-color: aquamarine; */
+    display: flex;
+    height: 50px;
+    width: 70vw;
+    max-width: 800px;
+    border: 2px solid rgb(3, 3, 20);
+    border-radius: 8px;
+    margin: 2vw auto;
+    overflow: hidden
+}
+
+.taskDiv div{
+    display: flex;
+    
+    align-items: center;
+}
+
+.todo{
+    background-color: rgb(240, 248, 255);
+    width: 80%;
+    border-right: solid rgb(3, 3, 20);
+
+}
+.todo div{
+    justify-content: center;
+    border-right: solid rgb(3, 3, 20);
+    /* border-left: solid rgb(3, 3, 20); */
+    height: 100%;
+    width: 8%;
+}
+
+.todo .icon{
+    font-size: x-large;
+}
+
+.todo span{
+    width:92%; 
+    text-align: center ;
+    
+    
+}
+.todo span::first-letter{
+    text-transform: capitalize;
+}
+
+.actions{
+    margin:10px;
+    justify-content: center;
+
+}
+
+.actions div{
+    flex-direction: column;
+
+}
+
+.action{
+    margin:0px 5px;
+}
+.actions h4{
+    margin: 0;
+}
+.action h4{
+    color: transparent;
+    margin: 0%;
+    font-size: 12px;
+    transition: all 0.4s ease-in;
+}
+
+.icon{
+    transition: fill 0.1s linear;
+}
+
+.action:hover h4{
+    color: black;
+    
+}
+.action:hover{
+    cursor: pointer;
+}
+
+.action:hover .icon{
+    font-size: 20px;
+    fill: rgb(8, 27, 82);
+}
+.action:active .icon{
+    fill:bisque;
+}
+
+.line{
+    text-decoration: line-through; 
+}
