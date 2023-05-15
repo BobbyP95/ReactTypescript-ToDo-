@@ -43,8 +43,8 @@ export const TaksList = ({display,tasks,setTasks,setDisplay}: Props) => {
         </div>
         <div className='filter_btn'>
             <div><button className='all_btn' onClick={()=>{setNo(0); console.log(no); }}>All</button></div>
-            <div><button className='comp_btn' onClick={()=>{setNo(1); console.log(no); }}>Comp</button></div>
-            <div><button className='uncomp_btn' onClick={()=>{setNo(2); console.log(no); }}>Uncomp</button></div>
+            <div><button className='active_btn' onClick={()=>{setNo(2); console.log(no); }}>Active</button></div>
+            <div><button className='comp_btn' onClick={()=>{setNo(1); console.log(no); }}>Complete</button></div>
         </div>
         </>
         

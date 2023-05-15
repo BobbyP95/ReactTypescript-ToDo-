@@ -18,33 +18,17 @@ function App() {
     setTasks (prev => [...prev, {id: Math.floor(Math.random()*200), text:task, complete:false}] )
     
     setTask('')
-    // setDisplay(prev => prev =tasks)
+    
    
   }
  
-  // 
-
-  // const all =()=>{
-  //   setDisplay(tasks) 
-  // } 
-  // const uncomp =()=>{
-  //   setDisplay(tasks.filter(t=>t.complete === false)) 
-  // } 
-  // const comp =()=>{
-  //   setDisplay(tasks.filter(t=>t.complete === true)) 
-
-  // } 
-  // const ongoing = tasks.filter(t=>t.complete === true)
-
-
 
 
   return (
     <>
       <EntryPoint task={task} setTask={setTask} handleSubmit={addTask}/>
     :<TaksList display={display} setDisplay={setDisplay} setTasks={setTasks} tasks={tasks}/>
-      {/* <Filter all={all} comp={comp} uncomp={uncomp}/> */}
-    </>
+        </>
   );
 }
 
